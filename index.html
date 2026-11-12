@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aku Bangga Jadi Mahasiswa IT</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #101d38;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #123456;
+            margin-bottom: 25px;
+        }
+
+        .running-box {
+            width: 100%;
+            overflow: hidden;
+            background: #101d38;
+            padding: 20px 0;
+            border-radius: 10px;
+        }
+
+        .running-text {
+            display: inline-block;
+            white-space: nowrap;
+            color: #00e5ff;
+            font-size: 28px;
+            font-weight: bold;
+            animation: berjalan 10s linear infinite;
+        }
+
+        @keyframes berjalan {
+            from {
+                transform: translateX(100%);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        p {
+            margin-top: 20px;
+            color: #555;
+        }
+
+        /* Tampilan Mobile */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 20px 12px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .running-text {
+                font-size: 20px;
+                animation-duration: 8s;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>MAHASISWA IT</h1>
+
+        <div class="running-box">
+            <div class="running-text">
+                AKU BANGGA JADI MAHASISWA IT
+                💻 🚀
+            </div>
+        </div>
+
+        <p>
+            Teknologi adalah masa depan,
+            dan aku bagian dari perubahan!
+        </p>
+
+    </div>
+
+</body>
+</html>
